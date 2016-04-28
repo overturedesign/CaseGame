@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<script type="text/javascript" src="script.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css"> 
+	</head>
+	
+	<body>
+		<div class="box">
+			<label for="num_cases"><abbr title="Number of Cases Read">Cases</abbr></label>
+			<input id="num_cases" value="0" onkeydown="disableField()" />
+			<button id="up" onclick="modify_num_cases(1)">+1</button>
+		</div>
+
+		<div class="box">
+			<label for="num_parties"><abbr title="Number of Parties Attended">Parties</abbr></label>
+			<input id="num_parties" value="0" onkeydown="disableField()"/>
+			<button id="up" onclick="modify_num_parties(1)">+1</button>
+		</div>
+
+		<div class="box">
+			<label for="num_interviews"><abbr title="Number of Interviews Attended">Interviews</abbr></label>
+			<input id="num_interviews" value="0" onkeydown="disableField()"/>
+			<button id="up" onclick="modify_num_interviews(1)">+1</button>
+		</div>
+
+	</body>
+</html>
