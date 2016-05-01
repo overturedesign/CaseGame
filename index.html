@@ -1,16 +1,63 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<script type="text/javascript" src="script.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css"> 
 	</head>
 	
-	<body>
-		<div class="box">
-			<label for="num_cases"><abbr title="Number of Cases Read">Cases</abbr></label>
-			<input id="num_cases" value="0" onkeydown="disableField()" />
-			<button id="up" onclick="modify_num_cases(1)">+1</button>
+	<body onload = 'save()'>
+		<!-- Displays Time--> 
+		<div> 
+			<label>Time </label>
+			<input id='display_time' />
 		</div>
 
+		<!-- Result: only displays at end of game -->
+		<div id='result'>
+		</div>
+
+		<div id= 'all_boxes'>
+				<!-- Cases Box--> 
+			<div class="box">
+				<label for="num_cases"><abbr title="Number of Cases Read">Cases</abbr></label>
+				<input id="num_cases"/>
+				<button id="up" onclick="read_a_case()">+1</button>
+			</div>
+
+			<!-- Parties Box--> 
+			<div class="box">
+				<label for="num_parties"><abbr title="Number of Parties Attended">Parties</abbr></label>
+				<input id="num_parties"/>
+				<button id="up" onclick="go_to_a_party()">+1</button>
+			</div>
+
+			<!-- Sleep Box--> 
+			<div class="box">
+				<label for="num_sleep_debt"><abbr title="Sleep Debt">Sleep Debt</abbr></label>
+				<input id="num_sleep_debt"/>
+				<button id="up" onclick="sleep()">Sleep</button>
+		</div>
+
+		
+		
+		<!-- Achievements Tab-->
+		</div>
+
+			<div class="achievements">
+			<label>Achievements</label>
+			<div id='achievements'/>
+			
+		</div>
+		
+		<!-- Clear all button--> 
+		<div>
+			<button id = 'Clear All Data' onclick = 'clear_all_data()'> Clear All Data </button>
+
+		</div>
+
+
+		
+<!--		
 		<div class="box">
 			<label for="num_parties"><abbr title="Number of Parties Attended">Parties</abbr></label>
 			<input id="num_parties" value="0" onkeydown="disableField()"/>
@@ -22,6 +69,6 @@
 			<input id="num_interviews" value="0" onkeydown="disableField()"/>
 			<button id="up" onclick="modify_num_interviews(1)">+1</button>
 		</div>
-
+-->
 	</body>
 </html>

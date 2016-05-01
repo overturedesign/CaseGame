@@ -3,3 +3,12 @@ Game Design Document
 Bottom line: You can have it all, but not all at the same time
 
 Gist: to demonstrate competing activities at HBS with limited time and energy.
+
+MATH
+	[time]
+	Assumes that everyone goes to school from 9am - 3pm (6 hours).
+	Total time to allocate every day is 18 hours (24 hours - 6 hours).
+	Default 8 hours of sleep. 
+	Free time to read cases or parties: 10 hours (18-8 hours).
+	Each case takes 3 hours to prep.
+	Each party takes 10 hours.
